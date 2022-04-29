@@ -110,9 +110,7 @@ const NavBar: React.FC<NavBarProps> = (props) => {
             style={{
               height: `${NavBarHeight}px`,
             }}
-          >
-            1111
-          </View>
+          />
           <View
             className={styles.navContainer}
             style={{

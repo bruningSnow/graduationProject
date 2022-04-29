@@ -11,6 +11,7 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: `dist/${process.env.TARO_ENV}`,
+  useEslint: false,
   plugins: [],
   defineConstants: {},
   copy: {
