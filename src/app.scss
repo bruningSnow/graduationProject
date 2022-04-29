@@ -1,0 +1,49 @@
+page {
+  height: 100vh;
+  overflow-y: scroll;
+  background: #f9f9f9;
+  box-sizing: border-box;
+}
+
+div,
+View,
+Text,
+taro-view-core,
+scroll-view {
+  box-sizing: border-box;
+}
+
+button {
+  &:after {
+    display: none;
+  }
+}
+
+.at-tab-bar {
+  height: 140px !important;
+}
+
+.toast-body {
+  max-width: 412px;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.toast-body span {
+  word-break: break-all !important;
+  font-size: 28px;
+  font-family: PingFangSC, PingFangSC-Regular !important;
+  font-weight: 400 !important;
+  color: #ffffff !important;
+}
+
+.taro__toast > div {
+  max-width: 412px !important;
+}
+
+.taro__toast p {
+  word-break: break-all !important;
+  font-size: 28px;
+  font-family: PingFangSC, PingFangSC-Regular !important;
+  font-weight: 400 !important;
+  color: #ffffff !important;
+}

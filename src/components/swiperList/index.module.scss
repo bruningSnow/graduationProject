@@ -1,0 +1,19 @@
+.swiper {
+  height: 400px;
+  margin-bottom: 30px;
+  .swiperItem {
+    width: 100vw;
+    height: 100%;
+    background: transparent;
+  }
+  .swiperItem_ImageContainer {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > image {
+      width: 100vw;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.index {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: transparent;
+  box-sizing: border-box;
+  min-height: 100vh;
+  .content {
+    background: #efefef;
+    flex: 1;
+  }
+}
