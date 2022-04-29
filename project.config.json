@@ -1,8 +1,8 @@
 {
-  "miniprogramRoot": "./dist",
-  "projectname": "myApp",
-  "description": "t",
-  "appid": "touristappid",
+  "miniprogramRoot": "./dist/weapp",
+  "projectname": "藻言文创馆",
+  "description": "藻言文创馆",
+  "appid": "wxcd6ebc506791426e",
   "setting": {
     "urlCheck": true,
     "es6": false,
