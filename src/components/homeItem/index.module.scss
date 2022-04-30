@@ -1,0 +1,30 @@
+.homeItemContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  .homeItemContainer_text {
+    color: #333;
+    font-size: 32rpx;
+  }
+  .homeItemContainer_icon {
+    position: absolute;
+    right: 40px;
+    animation: clipMe 1.5s ease infinite; /*动画*/
+  }
+  @keyframes clipMe {
+    from {
+      right: 80px;
+    }
+    to {
+      right: 40px;
+    }
+  }
+}

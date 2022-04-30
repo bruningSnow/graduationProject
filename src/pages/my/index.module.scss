@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 40px;
     .myTitleContainer_imgContainer {
       width: 160px;
       height: 160px;
@@ -36,5 +37,9 @@
       padding: 0;
       line-height: 1;
     }
+  }
+
+  .myItemContainer {
+    padding: 0 20px;
   }
 }

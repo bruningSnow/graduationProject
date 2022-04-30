@@ -9,3 +9,4 @@ export { default as SwiperList } from './swiperList';
 export { default as SearchInput } from './searchInput';
 export { default as ClassfiyContainer } from './classfiyContainer';
 export { default as ClassfiyContainerItem } from './classfiyContainerItem';
+export { default as HomeItem } from './homeItem';

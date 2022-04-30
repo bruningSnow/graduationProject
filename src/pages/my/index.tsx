@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Taro, { useDidShow } from '@tarojs/taro';
 import { View, Image } from '@tarojs/components';
 import { AtButton } from 'taro-ui';
-import { PageContainer, TabBar } from '@/components/index';
+import { PageContainer, TabBar, HomeItem } from '@/components/index';
 
 import styles from './index.module.scss';
 
@@ -62,6 +62,10 @@ const Index: React.FC<{}> = () => {
             {userProfile.nickName}
           </AtButton>
         )}
+      </View>
+
+      <View className={styles.myItemContainer}>
+        <HomeItem text="关于我们" />
       </View>
       <TabBar current={3} />
     </PageContainer>
