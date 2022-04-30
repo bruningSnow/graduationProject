@@ -26,7 +26,7 @@ const ClassfiyContainerItem: React.FC<ClassfiyContainerItemProps> = (props) => {
           className={styles.listItemContainer_imgSrc}
           src={imgSrc}
           lazyLoad={true}
-          mode="aspectFill"
+          mode="scaleToFill"
         />
       </View>
       <View className={styles.listItemContainer_footer}>{sourceName}</View>

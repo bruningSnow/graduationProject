@@ -1,5 +1,6 @@
 import React, { CSSProperties } from 'react';
 import ClassNames from 'classnames';
+import Taro from '@tarojs/taro';
 import { View, Swiper, SwiperItem, Image } from '@tarojs/components';
 
 import styles from './index.module.scss';
@@ -14,6 +15,7 @@ export interface SwiperListProps {
 
 const SwiperList: React.FC<SwiperListProps> = (props) => {
   const { imageList, onChange, current, classname = '', style = {} } = props;
+  const systemInfo = Taro.getSystemInfoSync();
 
   return (
     <Swiper
@@ -31,9 +33,11 @@ const SwiperList: React.FC<SwiperListProps> = (props) => {
         <SwiperItem className={styles.SwiperItem} key={bannerIndex}>
           <View className={styles.swiperItem_ImageContainer}>
             <Image
-              className={styles.swiperItem_Image}
               src={banner}
-              mode="aspectFill"
+              style={{
+                width: systemInfo.screenWidth,
+                height: (systemInfo.screenWidth / 16) * 9,
+              }}
             />
           </View>
         </SwiperItem>

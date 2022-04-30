@@ -1,4 +1,9 @@
 .index_scrollview {
-  height: 'calc(100vh - 200px)';
+  overflow: hidden;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0 30px 120px;
 }

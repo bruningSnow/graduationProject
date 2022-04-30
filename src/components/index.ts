@@ -4,8 +4,6 @@ export { default as TabBar } from './tab-bar/index';
 export { TabBarProps } from './tab-bar/index';
 export { default as PageContainer } from './page-container/index';
 export { PageContainerProps } from './page-container/index';
-// export { default as IconFont } from './iconfont';
-export { default as ListItem } from './listItem';
 export { default as ListItemScroll } from './listItemScroll';
 export { default as SwiperList } from './swiperList';
 export { default as SearchInput } from './searchInput';

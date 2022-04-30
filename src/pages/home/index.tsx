@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
-import Taro from '@tarojs/taro';
+import React, { useState, useMemo } from 'react';
 import { AtGrid } from 'taro-ui';
 import {
   PageContainer,
   TabBar,
-  ListItemScroll,
   SwiperList,
   SearchInput,
   ClassfiyContainer,
@@ -15,6 +13,25 @@ import styles from './index.module.scss';
 
 const Index: React.FC<{}> = () => {
   const [swiperCurrent, setSwiperCurrent] = useState<number>(0);
+
+  const shuma = useMemo(() => listItems.filter(({ type }) => type === 1), []);
+  const shougong = useMemo(
+    () => listItems.filter(({ type }) => type === 2),
+    [],
+  );
+  const caizhuang = useMemo(
+    () => listItems.filter(({ type }) => type === 3),
+    [],
+  );
+  const fuzhuang = useMemo(
+    () => listItems.filter(({ type }) => type === 4),
+    [],
+  );
+  const peishi = useMemo(() => listItems.filter(({ type }) => type === 5), []);
+  const shenghuo = useMemo(
+    () => listItems.filter(({ type }) => type === 6),
+    [],
+  );
 
   return (
     <PageContainer
@@ -71,31 +88,30 @@ const Index: React.FC<{}> = () => {
       />
       <ClassfiyContainer
         title="数码周边系列"
-        listItems={listItems}
+        listItems={shuma}
         style={{ marginBottom: '15px' }}
       />
       <ClassfiyContainer
         title="手工系列"
-        listItems={listItems}
+        listItems={shougong}
         style={{ marginBottom: '15px' }}
       />
       <ClassfiyContainer
         title="彩妆系列"
-        listItems={listItems}
+        listItems={caizhuang}
         style={{ marginBottom: '15px' }}
       />
       <ClassfiyContainer
         title="服装系列"
-        listItems={listItems}
+        listItems={fuzhuang}
         style={{ marginBottom: '15px' }}
       />
       <ClassfiyContainer
         title="配饰系列"
-        listItems={listItems}
+        listItems={peishi}
         style={{ marginBottom: '15px' }}
       />
-      <ClassfiyContainer title="生活百货系列" listItems={listItems} />
-      {/* <ListItemScroll listItems={listItems} /> */}
+      <ClassfiyContainer title="生活百货系列" listItems={shenghuo} />
       <TabBar current={1} />
     </PageContainer>
   );

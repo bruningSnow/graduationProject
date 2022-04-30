@@ -1,8 +1,8 @@
 import React, { CSSProperties } from 'react';
 import Taro from '@tarojs/taro';
 import Classnames from 'classnames';
-import { ScrollView } from '@tarojs/components';
-import { ListItem } from '@/components/index';
+import { View } from '@tarojs/components';
+import { ClassfiyContainerItem } from '@/components/index';
 import { IListItem } from '@/pages/home/consts';
 
 import styles from './index.module.scss';
@@ -17,16 +17,15 @@ const ListItemScroll: React.FC<ListItemScrollProps> = (props) => {
   const { className, style, listItems } = props;
 
   return (
-    <ScrollView
+    <View
       className={Classnames(styles.index_scrollview, className)}
-      scrollY
-      scrollWithAnimation
       style={style}
     >
       {listItems.map((item, itemIndex) => (
-        <ListItem
+        <ClassfiyContainerItem
           {...item}
-          style={{ marginRight: !(itemIndex % 2) ? '40rpx' : 0 }}
+          key={itemIndex}
+          style={{ width: 'calc(50% - 30rpx)' }}
           onClick={({ id }) =>
             Taro.navigateTo({
               url: `/subPackages/productDetail/index?id=${id}`,
@@ -34,7 +33,7 @@ const ListItemScroll: React.FC<ListItemScrollProps> = (props) => {
           }
         />
       ))}
-    </ScrollView>
+    </View>
   );
 };
 

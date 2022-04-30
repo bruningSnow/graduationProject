@@ -10,30 +10,47 @@ import styles from './index.module.scss';
 
 const ProductDetail: React.FC<any> = () => {
   const [swiperCurrent, setSwiperCurrent] = useState<number>(0);
+  // 当前商品同类别商品列表
   const [innerListItems, setInnerListItems] = useState<IListItem[]>([]);
+  // 当前商品详情页面
   const [product, setProduct] = useState<IProduct>({
     id: 1,
+    type: 0,
     bannerList: [],
     contentImageList: [],
   });
+  const systemInfo = Taro.getSystemInfoSync();
 
-  useEffect(() => {
+  const getInnerListItems = (newProduct: IProduct) => {
+    const { id: productId, type: productType } = newProduct;
+    let newInnerListItems: IListItem[] = [];
+
+    if (!productType) {
+      newInnerListItems = listItems;
+    } else {
+      newInnerListItems = listItems.filter(
+        ({ type, id }) => type === productType && id !== productId,
+      );
+    }
+
+    setInnerListItems(newInnerListItems);
+  };
+
+  const init = () => {
     const { id } = Taro.getCurrentInstance()?.router?.params || {};
 
     if (id) {
-      const newInnerListItems = listItems.filter(
-        ({ id: itemId }) => itemId !== parseInt(id),
-      );
       const newProduct =
         productList.find(({ id: prodctId }) => prodctId === parseInt(id)) ||
         product;
 
-      setInnerListItems(newInnerListItems);
+      getInnerListItems(newProduct);
       setProduct(newProduct);
     }
-  }, []);
+  };
 
   useDidShow(() => {
+    init();
     setSwiperCurrent(0);
   });
 
@@ -49,13 +66,16 @@ const ProductDetail: React.FC<any> = () => {
         current={swiperCurrent}
         onChange={setSwiperCurrent}
       />
-      <View style={{ marginBottom: '40rpx', overflow: 'hidden' }}>
+      <View style={{ marginBottom: '40rpx' }}>
         {product.contentImageList.map((contentImage, contentImageIndex) => (
           <Image
             key={contentImageIndex}
             className={styles.contentImage}
             src={contentImage}
-            mode="aspectFill"
+            style={{
+              width: systemInfo.screenWidth,
+            }}
+            mode="widthFix"
           />
         ))}
       </View>

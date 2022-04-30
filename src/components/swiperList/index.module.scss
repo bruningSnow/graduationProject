@@ -1,5 +1,5 @@
 .swiper {
-  height: 400px;
+  height: 426px;
   margin-bottom: 30px;
   .swiperItem {
     width: 100vw;
@@ -13,7 +13,8 @@
     align-items: center;
     justify-content: center;
     > image {
-      width: 100vw;
+      width: 450px;
+      height: 100%;
     }
   }
 }

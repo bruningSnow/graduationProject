@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Taro, { useDidShow } from '@tarojs/taro';
-import { View, Text, Image } from '@tarojs/components';
+import { View, Image } from '@tarojs/components';
 import { AtButton } from 'taro-ui';
 import { PageContainer, TabBar } from '@/components/index';
 
@@ -19,9 +19,25 @@ const Index: React.FC<{}> = () => {
       success: (res) => {
         setUserProfile(res.userInfo);
         setIsGetUser(true);
+        Taro.setStorage({
+          key: 'userProfile',
+          data: JSON.stringify(res.userInfo),
+        });
       },
     });
   };
+
+  useDidShow(() => {
+    Taro.getStorage({
+      key: 'userProfile',
+      success: function (res) {
+        if (res) {
+          setIsGetUser(true);
+          setUserProfile(JSON.parse(res.data));
+        }
+      },
+    });
+  });
 
   return (
     <PageContainer
