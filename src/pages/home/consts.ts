@@ -5,6 +5,57 @@ export interface IListItem {
   sourceName: string;
 }
 
+export interface IProductType {
+  key:
+    | '数码周边系列'
+    | '手工系列'
+    | '彩妆系列'
+    | '服装系列'
+    | '配饰系列'
+    | '生活百货系列';
+  value: number;
+  image: string;
+}
+
+export const productTypeList: IProductType[] = [
+  {
+    key: '数码周边系列',
+    value: 1,
+    image:
+      'https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png',
+  },
+  {
+    key: '手工系列',
+    value: 2,
+    image:
+      'https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png',
+  },
+  {
+    key: '彩妆系列',
+    value: 3,
+    image:
+      'https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png',
+  },
+  {
+    key: '服装系列',
+    value: 4,
+    image:
+      'https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png',
+  },
+  {
+    key: '配饰系列',
+    value: 5,
+    image:
+      'https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png',
+  },
+  {
+    key: '生活百货系列',
+    value: 6,
+    image:
+      'https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png',
+  },
+];
+
 export const listItems: IListItem[] = [
   {
     id: 1,

@@ -1,5 +1,5 @@
 export default {
-  pages: ['pages/home/index', 'pages/my/index'],
+  pages: ['pages/home/index', 'pages/classfiy/index', 'pages/my/index'],
   subPackages: [
     {
       root: 'subPackages/',
@@ -11,6 +11,9 @@ export default {
     list: [
       {
         pagePath: 'pages/home/index',
+      },
+      {
+        pagePath: 'pages/classfiy/index',
       },
       {
         pagePath: 'pages/my/index',

@@ -63,7 +63,7 @@ const Index: React.FC<{}> = () => {
           </AtButton>
         )}
       </View>
-      <TabBar current={2} />
+      <TabBar current={3} />
     </PageContainer>
   );
 };
