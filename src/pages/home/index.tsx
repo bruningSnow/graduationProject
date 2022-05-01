@@ -15,22 +15,28 @@ import styles from './index.module.scss';
 const Index: React.FC<{}> = () => {
   const [swiperCurrent, setSwiperCurrent] = useState<number>(0);
 
-  const shuma = useMemo(() => listItems.filter(({ type }) => type === 1), []);
+  const shuma = useMemo(
+    () => listItems.filter(({ type }) => type === 1).slice(0, 3),
+    [],
+  );
   const shougong = useMemo(
-    () => listItems.filter(({ type }) => type === 2),
+    () => listItems.filter(({ type }) => type === 2).slice(0, 3),
     [],
   );
   const caizhuang = useMemo(
-    () => listItems.filter(({ type }) => type === 3),
+    () => listItems.filter(({ type }) => type === 3).slice(0, 3),
     [],
   );
   const fuzhuang = useMemo(
-    () => listItems.filter(({ type }) => type === 4),
+    () => listItems.filter(({ type }) => type === 4).slice(0, 3),
     [],
   );
-  const peishi = useMemo(() => listItems.filter(({ type }) => type === 5), []);
+  const peishi = useMemo(
+    () => listItems.filter(({ type }) => type === 5).slice(0, 3),
+    [],
+  );
   const shenghuo = useMemo(
-    () => listItems.filter(({ type }) => type === 6),
+    () => listItems.filter(({ type }) => type === 6).slice(0, 3),
     [],
   );
 
