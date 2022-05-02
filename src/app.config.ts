@@ -3,7 +3,11 @@ export default {
   subPackages: [
     {
       root: 'subPackages/',
-      pages: ['productDetail/index', 'searchPage/index'],
+      pages: [
+        'productDetail/index',
+        'searchPage/index',
+        'productShowList/index',
+      ],
     },
   ],
   tabBar: {

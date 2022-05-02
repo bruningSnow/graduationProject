@@ -35,9 +35,6 @@ const ClassfiyTabItem: React.FC<ClassfiyTabItemProps> = (props) => {
           材质：{productAttri?.material}
         </View>
         <View className={styles.ClassfiyTabItem_right_des}>
-          纹样：{productAttri?.pattern}
-        </View>
-        <View className={styles.ClassfiyTabItem_right_des}>
           款式：{productAttri?.shape}
         </View>
       </View>

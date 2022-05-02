@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Taro, { useDidShow } from '@tarojs/taro';
 import { View, Image } from '@tarojs/components';
+import { AtDivider } from 'taro-ui';
 import { PageContainer, ListItemScroll, SwiperList } from '@/components/index';
 import { listItems, IListItem } from '@/pages/home/consts';
 
@@ -67,6 +68,14 @@ const ProductDetail: React.FC<any> = () => {
         onChange={setSwiperCurrent}
       />
       <View style={{ marginBottom: '40rpx' }}>
+        <View style={{ padding: '0 20rpx 30rpx' }}>
+          <AtDivider
+            className={styles.subTitle}
+            content="宝贝详情"
+            fontColor="#a1a7ba"
+            lineColor="#efefef"
+          />
+        </View>
         {product.contentImageList.map((contentImage, contentImageIndex) => (
           <Image
             key={contentImageIndex}
@@ -79,7 +88,21 @@ const ProductDetail: React.FC<any> = () => {
           />
         ))}
       </View>
-      <ListItemScroll listItems={innerListItems} />
+
+      <View>
+        <View style={{ padding: '0 20rpx' }}>
+          <AtDivider
+            className={styles.subTitle}
+            content="同系列宝贝"
+            fontColor="#a1a7ba"
+            lineColor="#efefef"
+          />
+        </View>
+        <ListItemScroll
+          listItems={innerListItems}
+          style={{ background: '#fff', padding: '30rpx' }}
+        />
+      </View>
     </PageContainer>
   );
 };

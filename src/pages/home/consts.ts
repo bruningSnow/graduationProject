@@ -1,7 +1,6 @@
 type TProductAttri = {
   classfiy: string;
   material: string;
-  pattern: string;
   shape: string;
 };
 export interface IListItem {
@@ -28,38 +27,32 @@ export const productTypeList: IProductType[] = [
   {
     key: '数码周边系列',
     value: 1,
-    image:
-      'https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png',
+    image: 'https://51nbimg.u51.com/d2ef35d1c7d9471ca2cc7b4696950f84.png',
   },
   {
     key: '手工系列',
     value: 2,
-    image:
-      'https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png',
+    image: 'https://51nbimg.u51.com/c4e5051f603e43a18c0b85a0e0b0f07d.png',
   },
   {
     key: '彩妆系列',
     value: 3,
-    image:
-      'https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png',
+    image: 'https://51nbimg.u51.com/daea9104a43a4c93b1724a93ccfa9815.png',
   },
   {
     key: '服装系列',
     value: 4,
-    image:
-      'https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png',
+    image: 'https://51nbimg.u51.com/daea9104a43a4c93b1724a93ccfa9815.png',
   },
   {
     key: '配饰系列',
     value: 5,
-    image:
-      'https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png',
+    image: 'https://51nbimg.u51.com/23a350bc0d8d40b99a486941b16a0006.png',
   },
   {
     key: '生活百货系列',
     value: 6,
-    image:
-      'https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png',
+    image: 'https://51nbimg.u51.com/4274fe8d7e004a2885f12d64fd0faeef.png',
   },
 ];
 
@@ -72,7 +65,6 @@ export const listItems: IListItem[] = [
     productAttri: {
       classfiy: '数码周边',
       material: '金属',
-      pattern: '九色鹿',
       shape: '插拔移动式',
     },
   },
@@ -84,7 +76,6 @@ export const listItems: IListItem[] = [
     productAttri: {
       classfiy: '数码周边',
       material: '塑料',
-      pattern: '--',
       shape: '充电款',
     },
   },
@@ -96,7 +87,6 @@ export const listItems: IListItem[] = [
     productAttri: {
       classfiy: '数码周边',
       material: '--',
-      pattern: '九色鹿',
       shape: '戴耳式',
     },
   },
@@ -108,7 +98,6 @@ export const listItems: IListItem[] = [
     productAttri: {
       classfiy: '数码周边',
       material: '金属',
-      pattern: '--',
       shape: '便携移动式',
     },
   },
@@ -120,7 +109,6 @@ export const listItems: IListItem[] = [
     productAttri: {
       classfiy: 'U盘',
       material: '不锈钢',
-      pattern: '纹样',
       shape: '款式',
     },
   },
@@ -132,56 +120,51 @@ export const listItems: IListItem[] = [
     productAttri: {
       classfiy: 'U盘',
       material: '不锈钢',
-      pattern: '纹样',
       shape: '款式',
     },
   },
   {
     id: 7,
-    imgSrc: 'https://i.ibb.co/YDxZ3b1/QQ20220420-16.jpg',
-    sourceName: '小疯分享',
+    imgSrc: 'https://51nbimg.u51.com/fbbd8393e17741f8a0f485b2f6834bd3.jpg',
+    sourceName: '散粉',
     type: 3,
     productAttri: {
-      classfiy: 'U盘',
-      material: '不锈钢',
-      pattern: '纹样',
-      shape: '款式',
+      classfiy: '彩妆',
+      material: '--',
+      shape: '--',
     },
   },
   {
     id: 8,
-    imgSrc: 'https://i.ibb.co/c6m91CY/QQ20220420-15.jpg',
-    sourceName: '小疯分享',
+    imgSrc: 'https://51nbimg.u51.com/cbca7029642649fe986c4588bb83f689.jpg',
+    sourceName: '化妆包',
     type: 3,
     productAttri: {
-      classfiy: 'U盘',
-      material: '不锈钢',
-      pattern: '纹样',
-      shape: '款式',
+      classfiy: '彩妆',
+      material: '--',
+      shape: '--',
     },
   },
   {
     id: 9,
-    imgSrc: 'https://i.ibb.co/ZMYjqC0/QQ20220420-14.jpg',
-    sourceName: '小疯分享',
+    imgSrc: 'https://51nbimg.u51.com/d82f957a57974a388c91c302a68a8761.jpeg',
+    sourceName: '护肤套装',
     type: 3,
     productAttri: {
-      classfiy: 'U盘',
-      material: '不锈钢',
-      pattern: '纹样',
-      shape: '款式',
+      classfiy: '彩妆',
+      material: '--',
+      shape: '--',
     },
   },
   {
     id: 10,
-    imgSrc: 'https://i.ibb.co/3MyzWwJ/QQ20220420-13.jpg',
-    sourceName: '小疯分享',
-    type: 4,
+    imgSrc: '',
+    sourceName: '口红',
+    type: 3,
     productAttri: {
-      classfiy: 'U盘',
-      material: '不锈钢',
-      pattern: '纹样',
-      shape: '款式',
+      classfiy: '彩妆',
+      material: '--',
+      shape: '--',
     },
   },
   {
@@ -192,7 +175,6 @@ export const listItems: IListItem[] = [
     productAttri: {
       classfiy: 'U盘',
       material: '不锈钢',
-      pattern: '纹样',
       shape: '款式',
     },
   },
@@ -204,7 +186,6 @@ export const listItems: IListItem[] = [
     productAttri: {
       classfiy: 'U盘',
       material: '不锈钢',
-      pattern: '纹样',
       shape: '款式',
     },
   },
@@ -216,7 +197,6 @@ export const listItems: IListItem[] = [
     productAttri: {
       classfiy: 'U盘',
       material: '不锈钢',
-      pattern: '纹样',
       shape: '款式',
     },
   },
@@ -228,7 +208,6 @@ export const listItems: IListItem[] = [
     productAttri: {
       classfiy: 'U盘',
       material: '不锈钢',
-      pattern: '纹样',
       shape: '款式',
     },
   },
@@ -240,44 +219,51 @@ export const listItems: IListItem[] = [
     productAttri: {
       classfiy: 'U盘',
       material: '不锈钢',
-      pattern: '纹样',
       shape: '款式',
     },
   },
   {
     id: 16,
-    imgSrc: 'https://i.ibb.co/gtRLz2Y/image.png',
-    sourceName: '小疯分享',
+    imgSrc: 'https://51nbimg.u51.com/ef6b6fefa7cd4d1eab8f8e1b364241b9.jpeg',
+    sourceName: '滑板',
     type: 6,
     productAttri: {
-      classfiy: 'U盘',
-      material: '不锈钢',
-      pattern: '纹样',
-      shape: '款式',
+      classfiy: '生活百货',
+      material: '--',
+      shape: '--',
     },
   },
   {
     id: 17,
-    imgSrc: 'https://i.ibb.co/gtRLz2Y/image.png',
-    sourceName: '小疯分享',
+    imgSrc: 'https://51nbimg.u51.com/8a84dfdd73b14b6ab792b22737f90d2d.jpeg',
+    sourceName: '抱枕',
     type: 6,
     productAttri: {
-      classfiy: 'U盘',
-      material: '不锈钢',
-      pattern: '纹样',
-      shape: '款式',
+      classfiy: '生活百货',
+      material: '--',
+      shape: '--',
     },
   },
   {
     id: 18,
-    imgSrc: 'https://i.ibb.co/gtRLz2Y/image.png',
-    sourceName: '小疯分享',
+    imgSrc: 'https://51nbimg.u51.com/af4d3783984841c5aac88f3b3b14da04.jpeg',
+    sourceName: '杯子',
     type: 6,
     productAttri: {
-      classfiy: 'U盘',
-      material: '不锈钢',
-      pattern: '纹样',
-      shape: '款式',
+      classfiy: '生活百货',
+      material: '--',
+      shape: '--',
+    },
+  },
+  {
+    id: 19,
+    imgSrc: '',
+    sourceName: '笔袋',
+    type: 6,
+    productAttri: {
+      classfiy: '生活百货',
+      material: '--',
+      shape: '--',
     },
   },
 ];

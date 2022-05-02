@@ -18,11 +18,11 @@ const SearchInput: React.FC<SearchInputProps> = (props) => {
     <View
       className={ClassNames(styles.SearchInput, classname)}
       style={style}
-      onClick={() =>
-        Taro.navigateTo({
-          url: `/subPackages/searchPage/index`,
-        })
-      }
+      // onClick={() =>
+      //   Taro.navigateTo({
+      //     url: `/subPackages/searchPage/index`,
+      //   })
+      // }
     >
       <View className={styles.SearchInputContainer}>
         <AtIcon value="search" size="15" color="#2a2a2a"></AtIcon>

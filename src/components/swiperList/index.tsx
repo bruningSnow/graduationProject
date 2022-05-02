@@ -24,7 +24,7 @@ const SwiperList: React.FC<SwiperListProps> = (props) => {
       indicatorColor="#999"
       indicatorActiveColor="#333"
       circular
-      indicatorDots
+      indicatorDots={imageList.length > 1}
       autoplay
       current={current}
       onChange={({ detail }) => onChange(detail.current)}

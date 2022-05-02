@@ -66,6 +66,14 @@ const Index: React.FC<{}> = () => {
 
       <View className={styles.myItemContainer}>
         <HomeItem text="关于我们" />
+        <HomeItem
+          text="实物展览"
+          onClick={() =>
+            Taro.navigateTo({
+              url: `/subPackages/productShowList/index`,
+            })
+          }
+        />
       </View>
       <TabBar current={3} />
     </PageContainer>
