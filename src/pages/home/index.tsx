@@ -8,7 +8,7 @@ import {
   SearchInput,
   ClassfiyContainer,
 } from '@/components/index';
-import { listItems, productTypeList } from './consts';
+import { listItems, productTypeList, swiperImageList } from './consts';
 
 import styles from './index.module.scss';
 
@@ -53,10 +53,7 @@ const Index: React.FC<{}> = () => {
     >
       <SearchInput />
       <SwiperList
-        imageList={[
-          'https://i.ibb.co/vc9YXQ7/QQ20220420-21.jpg',
-          'https://i.ibb.co/dtp2k1v/QQ20220420-22.jpg',
-        ]}
+        imageList={swiperImageList}
         current={swiperCurrent}
         onChange={setSwiperCurrent}
       />

@@ -23,6 +23,15 @@ export interface IProductType {
   image: string;
 }
 
+export const swiperImageList: string[] = [
+  'https://51nbimg.u51.com/be7bfe2ac9704fceb9be920e62e8a998.jpg',
+  'https://51nbimg.u51.com/598b4abeb4224990a8d1dc89d7652b7f.jpg',
+  'https://51nbimg.u51.com/02fce4f7616f4da69d5f108cc1d1d77a.jpeg',
+  'https://51nbimg.u51.com/e30bd0f1e343408a8e3c7955c5b14f21.jpeg',
+  'https://51nbimg.u51.com/cd9fc659c16744c89374696fd0fcb6fd.jpeg',
+  'https://51nbimg.u51.com/79f7ae9d9f5345608572ff7a74547191.jpg',
+];
+
 export const productTypeList: IProductType[] = [
   {
     key: '数码周边系列',
@@ -103,7 +112,7 @@ export const listItems: IListItem[] = [
   },
   {
     id: 5,
-    imgSrc: 'https://51nbimg.u51.com/237ccf4363c043d1a46244c1fc61f91f.jpgg',
+    imgSrc: '',
     sourceName: '小疯分享',
     type: 2,
     productAttri: {
@@ -114,7 +123,18 @@ export const listItems: IListItem[] = [
   },
   {
     id: 6,
-    imgSrc: 'https://i.ibb.co/QHQHqHs/QQ20220420-17.jpg',
+    imgSrc: '',
+    sourceName: '小疯分享',
+    type: 2,
+    productAttri: {
+      classfiy: 'U盘',
+      material: '不锈钢',
+      shape: '款式',
+    },
+  },
+  {
+    id: 61,
+    imgSrc: '',
     sourceName: '小疯分享',
     type: 2,
     productAttri: {
@@ -169,7 +189,7 @@ export const listItems: IListItem[] = [
   },
   {
     id: 11,
-    imgSrc: 'https://i.ibb.co/gtRLz2Y/image.png',
+    imgSrc: '',
     sourceName: '小疯分享',
     type: 4,
     productAttri: {
@@ -180,7 +200,18 @@ export const listItems: IListItem[] = [
   },
   {
     id: 12,
-    imgSrc: 'https://i.ibb.co/gtRLz2Y/image.png',
+    imgSrc: '',
+    sourceName: '小疯分享',
+    type: 4,
+    productAttri: {
+      classfiy: 'U盘',
+      material: '不锈钢',
+      shape: '款式',
+    },
+  },
+  {
+    id: 121,
+    imgSrc: '',
     sourceName: '小疯分享',
     type: 4,
     productAttri: {
@@ -191,29 +222,29 @@ export const listItems: IListItem[] = [
   },
   {
     id: 13,
-    imgSrc: 'https://i.ibb.co/gtRLz2Y/image.png',
-    sourceName: '小疯分享',
+    imgSrc: 'https://51nbimg.u51.com/7c380ff483ab4d0f8ae2fd3e3e489172.jpeg',
+    sourceName: '手表',
     type: 5,
     productAttri: {
-      classfiy: 'U盘',
-      material: '不锈钢',
-      shape: '款式',
+      classfiy: '配饰',
+      material: '--',
+      shape: '--',
     },
   },
   {
     id: 14,
-    imgSrc: 'https://i.ibb.co/gtRLz2Y/image.png',
-    sourceName: '小疯分享',
+    imgSrc: 'https://51nbimg.u51.com/fa477d2ba32145b6b5731ca5fd315c8f.jpeg',
+    sourceName: '丝巾',
     type: 5,
     productAttri: {
-      classfiy: 'U盘',
-      material: '不锈钢',
-      shape: '款式',
+      classfiy: '配饰',
+      material: '--',
+      shape: '--',
     },
   },
   {
     id: 15,
-    imgSrc: 'https://i.ibb.co/gtRLz2Y/image.png',
+    imgSrc: '',
     sourceName: '小疯分享',
     type: 5,
     productAttri: {
@@ -224,7 +255,7 @@ export const listItems: IListItem[] = [
   },
   {
     id: 16,
-    imgSrc: 'https://51nbimg.u51.com/ef6b6fefa7cd4d1eab8f8e1b364241b9.jpeg',
+    imgSrc: 'https://51nbimg.u51.com/00db1738453b49e0bcd1d76d84bee179.jpg',
     sourceName: '滑板',
     type: 6,
     productAttri: {
@@ -235,7 +266,7 @@ export const listItems: IListItem[] = [
   },
   {
     id: 17,
-    imgSrc: 'https://51nbimg.u51.com/8a84dfdd73b14b6ab792b22737f90d2d.jpeg',
+    imgSrc: 'https://51nbimg.u51.com/40619838dd4a4230a8d6a8f31db9c746.jpg',
     sourceName: '抱枕',
     type: 6,
     productAttri: {
@@ -246,7 +277,7 @@ export const listItems: IListItem[] = [
   },
   {
     id: 18,
-    imgSrc: 'https://51nbimg.u51.com/af4d3783984841c5aac88f3b3b14da04.jpeg',
+    imgSrc: 'https://51nbimg.u51.com/cce95713c2144bf69a33444de6abb474.jpg',
     sourceName: '杯子',
     type: 6,
     productAttri: {
@@ -257,8 +288,30 @@ export const listItems: IListItem[] = [
   },
   {
     id: 19,
-    imgSrc: '',
+    imgSrc: 'https://51nbimg.u51.com/d53e837ecaa3444bae9f2574376db138.jpg',
     sourceName: '笔袋',
+    type: 6,
+    productAttri: {
+      classfiy: '生活百货',
+      material: '--',
+      shape: '--',
+    },
+  },
+  {
+    id: 20,
+    imgSrc: 'https://51nbimg.u51.com/f612a4107652406c832d0d22cc6f576a.jpg',
+    sourceName: '胶带',
+    type: 6,
+    productAttri: {
+      classfiy: '生活百货',
+      material: '--',
+      shape: '--',
+    },
+  },
+  {
+    id: 21,
+    imgSrc: 'https://51nbimg.u51.com/02ca81d9f0b842cf8cfbd0b4f4206749.jpg',
+    sourceName: '钱包',
     type: 6,
     productAttri: {
       classfiy: '生活百货',

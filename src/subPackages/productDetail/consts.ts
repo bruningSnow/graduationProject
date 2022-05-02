@@ -73,9 +73,17 @@ export const productList: IProduct[] = [
     contentImageList: [],
   },
   {
+    id: 61,
+    type: 2,
+    bannerList: [],
+    contentImageList: [],
+  },
+  {
     id: 7,
     type: 3,
-    bannerList: [],
+    bannerList: [
+      'https://51nbimg.u51.com/18a3246d3303446ab55551628bb2eef1.jpeg',
+    ],
     contentImageList: [
       'https://51nbimg.u51.com/d8b0448955f34db68ed98f3b3c9e2600.jpg',
     ],
@@ -96,6 +104,7 @@ export const productList: IProduct[] = [
     bannerList: [
       'https://51nbimg.u51.com/e30bd0f1e343408a8e3c7955c5b14f21.jpeg',
       'https://51nbimg.u51.com/15aec5869cfb4fc58cace026e209645f.jpeg',
+      'https://51nbimg.u51.com/7e1a46a6ef7d4771b5836aa4c1b677ab.jpeg',
     ],
     contentImageList: [
       'https://51nbimg.u51.com/c968ddd231824caf813560582ce19c1d.jpeg',
@@ -122,16 +131,32 @@ export const productList: IProduct[] = [
     contentImageList: [],
   },
   {
-    id: 13,
-    type: 5,
+    id: 121,
+    type: 4,
     bannerList: [],
     contentImageList: [],
   },
   {
+    id: 13,
+    type: 5,
+    bannerList: [
+      'https://51nbimg.u51.com/9d81da7ec7244f9a9fce133f5188756a.jpeg',
+      'https://51nbimg.u51.com/cd9fc659c16744c89374696fd0fcb6fd.jpeg',
+    ],
+    contentImageList: [
+      'https://51nbimg.u51.com/9dc37a6594dd4afdadd4c8757b97aee6.jpeg',
+    ],
+  },
+  {
     id: 14,
     type: 5,
-    bannerList: [],
-    contentImageList: [],
+    bannerList: [
+      'https://51nbimg.u51.com/b54b647cc2c646fa91633b746e1dd1ad.jpeg',
+      'https://51nbimg.u51.com/10cceb96592242929cb94f28ab635990.jpeg',
+    ],
+    contentImageList: [
+      'https://51nbimg.u51.com/fef221b970e045d29923854aa7eb1401.jpeg',
+    ],
   },
   {
     id: 15,
@@ -143,36 +168,66 @@ export const productList: IProduct[] = [
     id: 16,
     type: 6,
     bannerList: [
-      'https://51nbimg.u51.com/6c8756805c3c47f89d4a471f1671b5fd.jpeg',
+      'https://51nbimg.u51.com/efc5fc0de6944041b1f4c87091831650.jpg',
+      'https://51nbimg.u51.com/c2039b13e87b470fba06417b0a3ede18.jpg',
     ],
     contentImageList: [
-      'https://51nbimg.u51.com/c867767e008049dc893ab99bdbecd996.jpeg',
+      'https://51nbimg.u51.com/1e6fb24f629f49888dc808590db13348.jpg',
     ],
   },
   {
     id: 17,
     type: 6,
-    bannerList: [],
+    bannerList: [
+      'https://51nbimg.u51.com/79f7ae9d9f5345608572ff7a74547191.jpg',
+      'https://51nbimg.u51.com/0b9280732aea4bb9bc8331a0a516558d.jpg',
+    ],
     contentImageList: [
-      'https://51nbimg.u51.com/ffed5899144249fab3c77654b03af5dd.jpeg',
+      'https://51nbimg.u51.com/6ee226c4ec284e71984484a26444f207.jpg',
     ],
   },
   {
     id: 18,
     type: 6,
     bannerList: [
-      'https://51nbimg.u51.com/02fce4f7616f4da69d5f108cc1d1d77a.jpeg',
+      'https://51nbimg.u51.com/cdfae73ee84b443fb89d12e0ff74c704.jpg',
+      'https://51nbimg.u51.com/10b8cc73f376481d911e968945636738.jpg',
     ],
     contentImageList: [
-      'https://51nbimg.u51.com/7430cb7fef404be4aef4195f89f4bc61.jpeg',
+      'https://51nbimg.u51.com/1feb246cae3c4408b94163eb9eff76fe.jpg',
     ],
   },
   {
     id: 19,
     type: 6,
-    bannerList: [''],
+    bannerList: [
+      'https://51nbimg.u51.com/ae143d5b99c6495ca36fc52ec2f6e0f5.jpg',
+      'https://51nbimg.u51.com/cabc1d23da184d98afb6b788b6819ad7.jpg',
+    ],
     contentImageList: [
-      'https://51nbimg.u51.com/99db2e91c4634353baba45881f5e46a0.jpeg',
+      'https://51nbimg.u51.com/5677221b3cad4e6e9dc16e374c0f25f9.jpg',
+    ],
+  },
+  {
+    id: 20,
+    type: 6,
+    bannerList: [
+      'https://51nbimg.u51.com/3b029ee02c2941ea94dafb7cd7d28f75.jpg',
+      'https://51nbimg.u51.com/6065c6d9d51a46fba8fed1acc6815b09.jpg',
+    ],
+    contentImageList: [
+      'https://51nbimg.u51.com/66d3295c0cf54abb89cbd165f0e6b527.jpg',
+    ],
+  },
+  {
+    id: 21,
+    type: 6,
+    bannerList: [
+      'https://51nbimg.u51.com/45824de0bafc4d5eb37d5a01156df2a4.jpg',
+      'https://51nbimg.u51.com/5ad1d3d2530c41f0aa7ca57bdc71ff71.jpg',
+    ],
+    contentImageList: [
+      'https://51nbimg.u51.com/767028a43a504712be23c7511d40ce3f.jpg',
     ],
   },
 ];
