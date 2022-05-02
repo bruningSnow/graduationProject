@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { AtGrid } from 'taro-ui';
 import Taro from '@tarojs/taro';
+import { View } from '@tarojs/components';
 import {
   PageContainer,
   TabBar,
@@ -52,11 +53,13 @@ const Index: React.FC<{}> = () => {
       hasBack={false}
     >
       <SearchInput />
-      <SwiperList
-        imageList={swiperImageList}
-        current={swiperCurrent}
-        onChange={setSwiperCurrent}
-      />
+      <View className={styles.content}>
+        <SwiperList
+          imageList={swiperImageList}
+          current={swiperCurrent}
+          onChange={setSwiperCurrent}
+        />
+      </View>
       <AtGrid
         className={styles.AtGrid}
         hasBorder={false}
