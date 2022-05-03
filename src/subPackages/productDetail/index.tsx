@@ -58,7 +58,7 @@ const ProductDetail: React.FC<any> = () => {
   return (
     <PageContainer
       className={styles.index}
-      title="产品详情"
+      title="宝贝详情"
       type="subPage"
       hasBack
     >

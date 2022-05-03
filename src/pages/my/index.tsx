@@ -66,6 +66,7 @@ const Index: React.FC<{}> = () => {
 
       <View className={styles.myItemContainer}>
         <HomeItem text="关于我们" />
+        <HomeItem text="实物展览" />
       </View>
       <TabBar current={3} />
     </PageContainer>

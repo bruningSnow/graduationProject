@@ -1,3 +1,3 @@
 export default {
-  navigationBarTitleText: '产品详情',
+  navigationBarTitleText: '宝贝详情',
 };
