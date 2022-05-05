@@ -45,6 +45,7 @@ const Index: React.FC<{}> = () => {
             <ClassfiyTabItem
               key={itemIndex}
               {...item}
+              itemStyle={{ width: '420rpx' }}
               onClick={({ id }) =>
                 Taro.navigateTo({
                   url: `/subPackages/productDetail/index?id=${id}`,
