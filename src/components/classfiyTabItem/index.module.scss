@@ -30,17 +30,17 @@
       margin-bottom: 20px;
     }
     .ClassfiyTabItem_right_des {
-      width: 100%;
+      width: 220px;
       font-family: PingFangSC-Regular;
       font-size: 28rpx;
       color: #a6a4a6;
-      text-align: center;
+      text-align: left;
       line-height: 1.2;
       font-weight: 400;
       margin-bottom: 20px;
-      display: -webkit-box;
       overflow: hidden;
       text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
 }

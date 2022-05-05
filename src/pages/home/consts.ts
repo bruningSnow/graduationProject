@@ -1,7 +1,15 @@
 type TProductAttri = {
-  classfiy: string;
-  material: string;
-  shape: string;
+  classfiy: string; // 系列分类
+  caizhi?: string; // 材质
+  xinghao?: string; // 型号
+  gongneng?: string; // 功能
+  shougong?: string; // 是否手工
+  kuanshi?: string; // 款式
+  mianliao?: string; // 面料分类
+  banxing?: string; // 版型
+  xinzhuang?: string; // 形状
+  chicun?: string; // 尺寸
+  rongliao?: string; // 容量
 };
 export interface IListItem {
   id: number;
@@ -36,78 +44,90 @@ export const productTypeList: IProductType[] = [
   {
     key: '数码周边系列',
     value: 1,
-    image: 'https://51nbimg.u51.com/d2ef35d1c7d9471ca2cc7b4696950f84.png',
+    image: 'https://51nbimg.u51.com/dc97b23b5fb846c7916cde129253ef53.png',
   },
   {
     key: '手工系列',
     value: 2,
-    image: 'https://51nbimg.u51.com/c4e5051f603e43a18c0b85a0e0b0f07d.png',
+    image: 'https://51nbimg.u51.com/f08314fbaf434930a90dba32c65c2f9b.png',
   },
   {
     key: '彩妆系列',
     value: 3,
-    image: 'https://51nbimg.u51.com/daea9104a43a4c93b1724a93ccfa9815.png',
+    image: 'https://51nbimg.u51.com/44220e25a0ad4597858ee49ad99127b1.png',
   },
   {
     key: '服装系列',
     value: 4,
-    image: 'https://51nbimg.u51.com/daea9104a43a4c93b1724a93ccfa9815.png',
+    image: 'https://51nbimg.u51.com/b0691d07d35744cea8cd9322d5cd0456.png',
   },
   {
     key: '配饰系列',
     value: 5,
-    image: 'https://51nbimg.u51.com/23a350bc0d8d40b99a486941b16a0006.png',
+    image: 'https://51nbimg.u51.com/ccd1d5cd1e9748119982d8bdcca3403f.png',
   },
   {
     key: '生活百货系列',
     value: 6,
-    image: 'https://51nbimg.u51.com/4274fe8d7e004a2885f12d64fd0faeef.png',
+    image: 'https://51nbimg.u51.com/2b732259f73a43ce87a5aa66934a83b3.png',
   },
 ];
 
 export const listItems: IListItem[] = [
   {
     id: 1,
-    imgSrc: 'https://51nbimg.u51.com/3bb66291501c4d998a267f788623c209.jpg',
-    sourceName: '移动U盘',
+    imgSrc: 'https://51nbimg.u51.com/afa8d4b6872f4e8a96a3c3ebceddfd7c.jpg',
+    sourceName: '手机壳',
     type: 1,
     productAttri: {
       classfiy: '数码周边',
-      material: '金属',
-      shape: '插拔移动式',
+      caizhi: '液态硅胶',
+      kuanshi: '保护壳',
+      xinghao: 'HUAWEI/华为',
     },
   },
   {
     id: 2,
-    imgSrc: 'https://51nbimg.u51.com/387e20ea4b90426eac2e92fdb1455ace.jpg',
-    sourceName: '蓝牙耳机盒',
+    imgSrc: 'https://51nbimg.u51.com/ea92a54dc0054744aba49fa489e20828.jpg',
+    sourceName: '鼠标垫',
     type: 1,
     productAttri: {
       classfiy: '数码周边',
-      material: '塑料',
-      shape: '充电款',
+      caizhi: '胶垫',
+      xinzhuang: '圆形',
     },
   },
   {
     id: 3,
-    imgSrc: 'https://51nbimg.u51.com/aaf8a0330a7c49048f1849ed12089623.jpg',
-    sourceName: '耳机',
-    type: 1,
-    productAttri: {
-      classfiy: '数码周边',
-      material: '--',
-      shape: '戴耳式',
-    },
-  },
-  {
-    id: 4,
-    imgSrc: 'https://51nbimg.u51.com/237ccf4363c043d1a46244c1fc61f91f.jpg',
+    imgSrc: 'https://51nbimg.u51.com/fdfc34f4b9334f69831354bae382904a.jpg',
     sourceName: '充电宝',
     type: 1,
     productAttri: {
       classfiy: '数码周边',
-      material: '金属',
-      shape: '便携移动式',
+      xinghao: 'sense 6',
+      caizhi: '塑料',
+    },
+  },
+  {
+    id: 4,
+    imgSrc: 'https://51nbimg.u51.com/730b8698ef414b8bb7550a621d0de103.jpg',
+    sourceName: '耳机盒',
+    type: 1,
+    productAttri: {
+      classfiy: '数码周边',
+      caizhi: '硅胶',
+      xinghao: 'airpods1/2/3/pro代',
+    },
+  },
+  {
+    id: 41,
+    imgSrc: 'https://51nbimg.u51.com/ecee93647cac43fc86f08cf113dd1015.jpg',
+    sourceName: '移动U盘',
+    type: 1,
+    productAttri: {
+      classfiy: '数码周边',
+      xinghao: 'F308(64G)',
+      rongliao: '64GB',
     },
   },
   {

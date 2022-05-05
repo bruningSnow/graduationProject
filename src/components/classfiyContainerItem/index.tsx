@@ -25,7 +25,6 @@ const ClassfiyContainerItem: React.FC<ClassfiyContainerItemProps> = (props) => {
         <Image
           className={styles.listItemContainer_imgSrc}
           src={imgSrc}
-          lazyLoad={true}
           mode="widthFix"
         />
       </View>

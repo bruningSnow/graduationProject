@@ -28,15 +28,61 @@ const ClassfiyTabItem: React.FC<ClassfiyTabItemProps> = (props) => {
       />
       <View className={styles.ClassfiyTabItem_right}>
         <View className={styles.ClassfiyTabItem_right_title}>{sourceName}</View>
-        <View className={styles.ClassfiyTabItem_right_des}>
-          品类：{productAttri?.classfiy}
-        </View>
-        <View className={styles.ClassfiyTabItem_right_des}>
-          材质：{productAttri?.material}
-        </View>
-        <View className={styles.ClassfiyTabItem_right_des}>
-          款式：{productAttri?.shape}
-        </View>
+        {productAttri?.classfiy && (
+          <View className={styles.ClassfiyTabItem_right_des}>
+            品类：{productAttri.classfiy}
+          </View>
+        )}
+        {productAttri?.caizhi && (
+          <View className={styles.ClassfiyTabItem_right_des}>
+            材质：{productAttri.caizhi}
+          </View>
+        )}
+        {productAttri?.xinghao && (
+          <View className={styles.ClassfiyTabItem_right_des}>
+            型号：{productAttri.xinghao}
+          </View>
+        )}
+        {productAttri?.gongneng && (
+          <View className={styles.ClassfiyTabItem_right_des}>
+            功能：{productAttri.gongneng}
+          </View>
+        )}
+        {productAttri?.shougong && (
+          <View className={styles.ClassfiyTabItem_right_des}>
+            是否手工：{productAttri.shougong}
+          </View>
+        )}
+        {productAttri?.kuanshi && (
+          <View className={styles.ClassfiyTabItem_right_des}>
+            款式：{productAttri.kuanshi}
+          </View>
+        )}
+        {productAttri?.mianliao && (
+          <View className={styles.ClassfiyTabItem_right_des}>
+            面料分类：{productAttri.mianliao}
+          </View>
+        )}
+        {productAttri?.banxing && (
+          <View className={styles.ClassfiyTabItem_right_des}>
+            版型：{productAttri.banxing}
+          </View>
+        )}
+        {productAttri?.xinzhuang && (
+          <View className={styles.ClassfiyTabItem_right_des}>
+            形状：{productAttri.xinzhuang}
+          </View>
+        )}
+        {productAttri?.chicun && (
+          <View className={styles.ClassfiyTabItem_right_des}>
+            尺寸：{productAttri.chicun}
+          </View>
+        )}
+        {productAttri?.rongliao && (
+          <View className={styles.ClassfiyTabItem_right_des}>
+            容量：{productAttri.rongliao}
+          </View>
+        )}
       </View>
     </View>
   );
