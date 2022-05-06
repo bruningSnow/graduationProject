@@ -75,37 +75,37 @@ const Index: React.FC<{}> = () => {
         onClick={(item: object, index: number) => goClassfiyPage(index + 1)}
       />
       <ClassfiyContainer
-        title="数码周边系列"
+        title="e潮品"
         listItems={shuma}
         style={{ marginBottom: '15px' }}
         onClickMore={() => goClassfiyPage(1)}
       />
       <ClassfiyContainer
-        title="手工系列"
+        title="百搭潮包"
         listItems={shougong}
         style={{ marginBottom: '15px' }}
         onClickMore={() => goClassfiyPage(2)}
       />
       <ClassfiyContainer
-        title="彩妆系列"
+        title="国潮彩妆"
         listItems={caizhuang}
         style={{ marginBottom: '15px' }}
         onClickMore={() => goClassfiyPage(3)}
       />
       <ClassfiyContainer
-        title="服装系列"
+        title="潮玩穿搭"
         listItems={fuzhuang}
         style={{ marginBottom: '15px' }}
         onClickMore={() => goClassfiyPage(4)}
       />
       <ClassfiyContainer
-        title="配饰系列"
+        title="潮纹织物"
         listItems={peishi}
         style={{ marginBottom: '15px' }}
         onClickMore={() => goClassfiyPage(5)}
       />
       <ClassfiyContainer
-        title="生活百货系列"
+        title="潮玩好物"
         listItems={shenghuo}
         onClickMore={() => goClassfiyPage(6)}
       />

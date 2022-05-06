@@ -57,7 +57,7 @@ const ClassfiyTabItem: React.FC<ClassfiyTabItemProps> = (props) => {
         )}
         {productAttri?.shougong && (
           <View className={styles.ClassfiyTabItem_right_des} style={itemStyle}>
-            是否手工：{productAttri.shougong}
+            是否百搭潮包：{productAttri.shougong}
           </View>
         )}
         {productAttri?.kuanshi && (

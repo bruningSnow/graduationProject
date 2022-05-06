@@ -1,9 +1,9 @@
 type TProductAttri = {
-  classfiy: string; // 系列分类
+  classfiy: string; // 分类
   caizhi?: string; // 材质
   xinghao?: string; // 型号
   gongneng?: string; // 功能
-  shougong?: string; // 是否手工
+  shougong?: string; // 是否百搭潮包
   kuanshi?: string; // 款式
   mianliao?: string; // 面料分类
   banxing?: string; // 版型
@@ -14,19 +14,13 @@ type TProductAttri = {
 export interface IListItem {
   id: number;
   imgSrc: string;
-  type: number; // 1 数码周边；2 手工；3 彩妆；4 服装；5 配饰；6 生活百货
+  type: number; // 1 e潮品；2 百搭潮包；3 国潮彩妆；4 潮玩穿搭；5 潮纹织物；6 潮玩好物
   sourceName: string;
   productAttri?: TProductAttri;
 }
 
 export interface IProductType {
-  key:
-    | '数码周边系列'
-    | '手工系列'
-    | '彩妆系列'
-    | '服装系列'
-    | '配饰系列'
-    | '生活百货系列';
+  key: 'e潮品' | '百搭潮包' | '国潮彩妆' | '潮玩穿搭' | '潮纹织物' | '潮玩好物';
   value: number;
   image: string;
 }
@@ -42,32 +36,32 @@ export const swiperImageList: string[] = [
 
 export const productTypeList: IProductType[] = [
   {
-    key: '数码周边系列',
+    key: 'e潮品',
     value: 1,
     image: 'https://51nbimg.u51.com/dc97b23b5fb846c7916cde129253ef53.png',
   },
   {
-    key: '手工系列',
+    key: '百搭潮包',
     value: 2,
     image: 'https://51nbimg.u51.com/f08314fbaf434930a90dba32c65c2f9b.png',
   },
   {
-    key: '彩妆系列',
+    key: '国潮彩妆',
     value: 3,
     image: 'https://51nbimg.u51.com/44220e25a0ad4597858ee49ad99127b1.png',
   },
   {
-    key: '服装系列',
+    key: '潮玩穿搭',
     value: 4,
     image: 'https://51nbimg.u51.com/b0691d07d35744cea8cd9322d5cd0456.png',
   },
   {
-    key: '配饰系列',
+    key: '潮纹织物',
     value: 5,
     image: 'https://51nbimg.u51.com/ccd1d5cd1e9748119982d8bdcca3403f.png',
   },
   {
-    key: '生活百货系列',
+    key: '潮玩好物',
     value: 6,
     image: 'https://51nbimg.u51.com/2b732259f73a43ce87a5aa66934a83b3.png',
   },
@@ -80,7 +74,7 @@ export const listItems: IListItem[] = [
     sourceName: '手机壳',
     type: 1,
     productAttri: {
-      classfiy: '数码周边',
+      classfiy: 'e潮品',
       caizhi: '液态硅胶',
       kuanshi: '保护壳',
       xinghao: 'HUAWEI/华为',
@@ -92,7 +86,7 @@ export const listItems: IListItem[] = [
     sourceName: '鼠标垫',
     type: 1,
     productAttri: {
-      classfiy: '数码周边',
+      classfiy: 'e潮品',
       caizhi: '胶垫',
       xinzhuang: '圆形',
     },
@@ -103,7 +97,7 @@ export const listItems: IListItem[] = [
     sourceName: '充电宝',
     type: 1,
     productAttri: {
-      classfiy: '数码周边',
+      classfiy: 'e潮品',
       xinghao: 'sense 6',
       caizhi: '塑料',
     },
@@ -114,7 +108,7 @@ export const listItems: IListItem[] = [
     sourceName: '耳机盒',
     type: 1,
     productAttri: {
-      classfiy: '数码周边',
+      classfiy: 'e潮品',
       caizhi: '硅胶',
       xinghao: 'airpods1/2/3/pro代',
     },
@@ -125,7 +119,7 @@ export const listItems: IListItem[] = [
     sourceName: '移动U盘',
     type: 1,
     productAttri: {
-      classfiy: '数码周边',
+      classfiy: 'e潮品',
       xinghao: 'F308(64G)',
       rongliao: '64GB',
     },
@@ -133,10 +127,10 @@ export const listItems: IListItem[] = [
   {
     id: 5,
     imgSrc: 'https://51nbimg.u51.com/e538fd6dd8cf4015824e20f39d27226c.jpg',
-    sourceName: '手工包',
+    sourceName: '百搭潮包包',
     type: 2,
     productAttri: {
-      classfiy: '手工',
+      classfiy: '百搭潮包',
     },
   },
   {
@@ -145,7 +139,7 @@ export const listItems: IListItem[] = [
     sourceName: '双肩包',
     type: 2,
     productAttri: {
-      classfiy: '手工',
+      classfiy: '百搭潮包',
     },
   },
   {
@@ -154,7 +148,7 @@ export const listItems: IListItem[] = [
     sourceName: '钱包',
     type: 2,
     productAttri: {
-      classfiy: '手工',
+      classfiy: '百搭潮包',
     },
   },
   {
@@ -163,7 +157,7 @@ export const listItems: IListItem[] = [
     sourceName: '散粉',
     type: 3,
     productAttri: {
-      classfiy: '彩妆',
+      classfiy: '国潮彩妆',
     },
   },
   {
@@ -172,7 +166,7 @@ export const listItems: IListItem[] = [
     sourceName: '化妆包',
     type: 3,
     productAttri: {
-      classfiy: '彩妆',
+      classfiy: '国潮彩妆',
     },
   },
   {
@@ -181,7 +175,7 @@ export const listItems: IListItem[] = [
     sourceName: '护肤套装',
     type: 3,
     productAttri: {
-      classfiy: '彩妆',
+      classfiy: '国潮彩妆',
     },
   },
   {
@@ -190,7 +184,7 @@ export const listItems: IListItem[] = [
     sourceName: '口红',
     type: 3,
     productAttri: {
-      classfiy: '彩妆',
+      classfiy: '国潮彩妆',
     },
   },
   {
@@ -199,7 +193,7 @@ export const listItems: IListItem[] = [
     sourceName: '短袖',
     type: 4,
     productAttri: {
-      classfiy: '服装',
+      classfiy: '潮玩穿搭',
     },
   },
   {
@@ -208,7 +202,7 @@ export const listItems: IListItem[] = [
     sourceName: '卫衣',
     type: 4,
     productAttri: {
-      classfiy: '服装',
+      classfiy: '潮玩穿搭',
     },
   },
   {
@@ -217,7 +211,7 @@ export const listItems: IListItem[] = [
     sourceName: '鞋子',
     type: 4,
     productAttri: {
-      classfiy: '服装',
+      classfiy: '潮玩穿搭',
     },
   },
   {
@@ -226,7 +220,7 @@ export const listItems: IListItem[] = [
     sourceName: '手表',
     type: 5,
     productAttri: {
-      classfiy: '配饰',
+      classfiy: '潮纹织物',
     },
   },
   {
@@ -235,7 +229,7 @@ export const listItems: IListItem[] = [
     sourceName: '丝巾',
     type: 5,
     productAttri: {
-      classfiy: '配饰',
+      classfiy: '潮纹织物',
     },
   },
   {
@@ -244,7 +238,7 @@ export const listItems: IListItem[] = [
     sourceName: '发带',
     type: 5,
     productAttri: {
-      classfiy: '配饰',
+      classfiy: '潮纹织物',
     },
   },
   {
@@ -253,7 +247,7 @@ export const listItems: IListItem[] = [
     sourceName: '滑板',
     type: 6,
     productAttri: {
-      classfiy: '生活百货',
+      classfiy: '潮玩好物',
     },
   },
   {
@@ -262,7 +256,7 @@ export const listItems: IListItem[] = [
     sourceName: '抱枕',
     type: 6,
     productAttri: {
-      classfiy: '生活百货',
+      classfiy: '潮玩好物',
     },
   },
   {
@@ -271,7 +265,7 @@ export const listItems: IListItem[] = [
     sourceName: '隔热垫',
     type: 6,
     productAttri: {
-      classfiy: '生活百货',
+      classfiy: '潮玩好物',
     },
   },
   {
@@ -280,7 +274,7 @@ export const listItems: IListItem[] = [
     sourceName: '杯子',
     type: 6,
     productAttri: {
-      classfiy: '生活百货',
+      classfiy: '潮玩好物',
     },
   },
   {
@@ -289,7 +283,7 @@ export const listItems: IListItem[] = [
     sourceName: '笔袋',
     type: 6,
     productAttri: {
-      classfiy: '生活百货',
+      classfiy: '潮玩好物',
     },
   },
   {
@@ -298,7 +292,7 @@ export const listItems: IListItem[] = [
     sourceName: '胶带',
     type: 6,
     productAttri: {
-      classfiy: '生活百货',
+      classfiy: '潮玩好物',
     },
   },
   {
@@ -307,7 +301,7 @@ export const listItems: IListItem[] = [
     sourceName: '行李箱',
     type: 6,
     productAttri: {
-      classfiy: '生活百货',
+      classfiy: '潮玩好物',
     },
   },
   {
@@ -316,7 +310,7 @@ export const listItems: IListItem[] = [
     sourceName: '口罩',
     type: 6,
     productAttri: {
-      classfiy: '生活百货',
+      classfiy: '潮玩好物',
     },
   },
   {
@@ -325,7 +319,7 @@ export const listItems: IListItem[] = [
     sourceName: '眼罩',
     type: 6,
     productAttri: {
-      classfiy: '生活百货',
+      classfiy: '潮玩好物',
     },
   },
 ];
