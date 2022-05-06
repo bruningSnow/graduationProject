@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { AtGrid } from 'taro-ui';
-import Taro from '@tarojs/taro';
+import Taro, { useDidShow } from '@tarojs/taro';
 import { View } from '@tarojs/components';
 import {
   PageContainer,
@@ -44,6 +44,13 @@ const Index: React.FC<{}> = () => {
   const goClassfiyPage = (type: number) => {
     Taro.reLaunch({ url: `/pages/classfiy/index?type=${type}` });
   };
+
+  useDidShow(() => {
+    Taro.showShareMenu({
+      withShareTicket: true,
+      showShareItems: ['qq', 'qzone', 'wechatFriends', 'wechatMoment'],
+    });
+  });
 
   return (
     <PageContainer

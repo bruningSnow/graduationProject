@@ -80,165 +80,230 @@ export const productList: IProduct[] = [
   {
     id: 6,
     type: 2,
-    bannerList: [],
-    contentImageList: [],
+    bannerList: [
+      'https://51nbimg.u51.com/835cc4519d3640d38ef48624011a1a59.jpg',
+      'https://51nbimg.u51.com/547c0eafa3c54d0b97b1f0b63546fb49.jpg',
+    ],
+    contentImageList: [
+      'https://51nbimg.u51.com/1c95eb5cbc4f480ab2db7288df2ae462.jpg',
+    ],
   },
   {
     id: 61,
     type: 2,
-    bannerList: [],
-    contentImageList: [],
+    bannerList: [
+      'https://51nbimg.u51.com/f5ef8ec9c4764d6e84079f9f1883dd77.jpg',
+      'https://51nbimg.u51.com/f0438f7cbaee4ff9b1efe2a1f1c4707b.jpg',
+    ],
+    contentImageList: [
+      'https://51nbimg.u51.com/3e203ad011b648eca0a1cbea751ead85.jpg',
+    ],
   },
   {
     id: 7,
     type: 3,
     bannerList: [
-      'https://51nbimg.u51.com/18a3246d3303446ab55551628bb2eef1.jpeg',
+      'https://51nbimg.u51.com/32c58f4936fc41d7a7685fc46e4a4a0d.jpg',
     ],
     contentImageList: [
-      'https://51nbimg.u51.com/d8b0448955f34db68ed98f3b3c9e2600.jpg',
+      'https://51nbimg.u51.com/42e189c13bc84c958f4c5bc2dfb3ab4a.jpg',
     ],
   },
   {
     id: 8,
     type: 3,
     bannerList: [
-      'https://51nbimg.u51.com/9470df6b22b94802959806bb79ee8c3a.jpeg',
+      'https://51nbimg.u51.com/05dcca315c404eba96220f07fef25558.jpg',
     ],
     contentImageList: [
-      'https://51nbimg.u51.com/670fe7e6a0144a478c74171d6f88a60b.jpeg',
+      'https://51nbimg.u51.com/d861d53af12c4b1c8f444e9101e4a184.jpg',
     ],
   },
   {
     id: 9,
     type: 3,
     bannerList: [
-      'https://51nbimg.u51.com/e30bd0f1e343408a8e3c7955c5b14f21.jpeg',
-      'https://51nbimg.u51.com/15aec5869cfb4fc58cace026e209645f.jpeg',
-      'https://51nbimg.u51.com/7e1a46a6ef7d4771b5836aa4c1b677ab.jpeg',
+      'https://51nbimg.u51.com/4b2979712e5247dda7b4f98526cec9f4.jpg',
+      'https://51nbimg.u51.com/d9613a998b804ed49a68be9ac973023c.jpg',
+      'https://51nbimg.u51.com/ccc98884325d492bb5e78d1c2de7a234.jpg',
     ],
     contentImageList: [
-      'https://51nbimg.u51.com/c968ddd231824caf813560582ce19c1d.jpeg',
+      'https://51nbimg.u51.com/b047dff93c014d26a8d92014f28fdd69.jpg',
     ],
   },
   {
     id: 10,
     type: 3,
-    bannerList: [],
+    bannerList: [
+      'https://51nbimg.u51.com/ca97ccd2ad5a427199d48d35f421672e.jpg',
+      'https://51nbimg.u51.com/0ac0d544ca79424aab08a8855eb20bc9.jpg',
+    ],
     contentImageList: [
-      'https://51nbimg.u51.com/710340e8293e42fca7b4891029fc158c.jpg',
+      'https://51nbimg.u51.com/25fe8916813140539440b29d071c5f1f.jpg',
     ],
   },
   {
     id: 11,
     type: 4,
-    bannerList: [],
-    contentImageList: [],
+    bannerList: [
+      'https://51nbimg.u51.com/59150c7a3a2c419990d78d970259ecb3.jpg',
+    ],
+    contentImageList: [
+      'https://51nbimg.u51.com/39bab5e8ef21430bbe6e3ac9d09b1848.jpg',
+    ],
   },
   {
     id: 12,
     type: 4,
-    bannerList: [],
-    contentImageList: [],
+    bannerList: [
+      'https://51nbimg.u51.com/4b7d6bd7b0544189a028a996049a8953.jpg',
+    ],
+    contentImageList: [
+      'https://51nbimg.u51.com/da4345be3155435f88712ae588b2b688.jpg',
+    ],
   },
   {
     id: 121,
     type: 4,
-    bannerList: [],
-    contentImageList: [],
+    bannerList: [
+      'https://51nbimg.u51.com/ebef4a472f3c4960924dd990b93829d0.jpg',
+      'https://51nbimg.u51.com/f158830a80b149aaa921684d8b446f9c.jpg',
+    ],
+    contentImageList: [
+      'https://51nbimg.u51.com/d9bee189611043cdba0204cb56242e0d.jpg',
+    ],
   },
   {
     id: 13,
     type: 5,
     bannerList: [
-      'https://51nbimg.u51.com/9d81da7ec7244f9a9fce133f5188756a.jpeg',
-      'https://51nbimg.u51.com/cd9fc659c16744c89374696fd0fcb6fd.jpeg',
+      'https://51nbimg.u51.com/aa8b210d8d7c449995c1a146830a82d9.jpg',
+      'https://51nbimg.u51.com/313f5de2f8b144c88a9ed8f51f3ffe3f.jpg',
     ],
     contentImageList: [
-      'https://51nbimg.u51.com/9dc37a6594dd4afdadd4c8757b97aee6.jpeg',
+      'https://51nbimg.u51.com/e6020e983d1d46309f435cb90727e728.jpg',
     ],
   },
   {
     id: 14,
     type: 5,
     bannerList: [
-      'https://51nbimg.u51.com/b54b647cc2c646fa91633b746e1dd1ad.jpeg',
-      'https://51nbimg.u51.com/10cceb96592242929cb94f28ab635990.jpeg',
+      'https://51nbimg.u51.com/68b0a5c60384461f8a073dcd1c539f0f.jpg',
+      'https://51nbimg.u51.com/a8fc138a5b0c47c4a3cf9b9ea99b2805.jpg',
     ],
     contentImageList: [
-      'https://51nbimg.u51.com/fef221b970e045d29923854aa7eb1401.jpeg',
+      'https://51nbimg.u51.com/211189894d064dd9828ff5fd46914b64.jpg',
     ],
   },
   {
     id: 15,
     type: 5,
-    bannerList: [],
-    contentImageList: [],
+    bannerList: [
+      'https://51nbimg.u51.com/0bfcda9aec30453ea0961f9f93df47e6.jpg',
+    ],
+    contentImageList: [
+      'https://51nbimg.u51.com/186c0585e40649dea2e79a9d69b611fa.jpg',
+    ],
   },
   {
     id: 16,
     type: 6,
     bannerList: [
-      'https://51nbimg.u51.com/efc5fc0de6944041b1f4c87091831650.jpg',
-      'https://51nbimg.u51.com/c2039b13e87b470fba06417b0a3ede18.jpg',
+      'https://51nbimg.u51.com/15961269999645608e7b787ea862e3b3.jpg',
+      'https://51nbimg.u51.com/d5448da9651e4c88929f6a66e805ed24.jpg',
     ],
     contentImageList: [
-      'https://51nbimg.u51.com/1e6fb24f629f49888dc808590db13348.jpg',
+      'https://51nbimg.u51.com/a9ac75de6fe343bf84baa8b46b1687f8.jpg',
     ],
   },
   {
     id: 17,
     type: 6,
     bannerList: [
-      'https://51nbimg.u51.com/79f7ae9d9f5345608572ff7a74547191.jpg',
-      'https://51nbimg.u51.com/0b9280732aea4bb9bc8331a0a516558d.jpg',
+      'https://51nbimg.u51.com/0263121e377e4283ad007c3cd3790ef8.jpg',
+      'https://51nbimg.u51.com/fba7225590b2495e9e963c4d43ea87aa.jpg',
+      'https://51nbimg.u51.com/3d395a306caa4de498829e01979808f0.jpg',
     ],
     contentImageList: [
-      'https://51nbimg.u51.com/6ee226c4ec284e71984484a26444f207.jpg',
+      'https://51nbimg.u51.com/526fa297d5e5442e8ee663c64e84a04d.jpg',
+    ],
+  },
+  {
+    id: 24,
+    type: 6,
+    bannerList: [
+      'https://51nbimg.u51.com/cbeeed37100c4817ba2bcb35ee5e076c.jpg',
+      'https://51nbimg.u51.com/750c7e9acd4d4bf3a4c00c21b308dd5c.jpg',
+      'https://51nbimg.u51.com/6b48e045e6014b7e9340b0b7fdd93cf4.jpg',
+      'https://51nbimg.u51.com/5ca8772373564cdf99c90a9921d73d5e.jpg',
+    ],
+    contentImageList: [
+      'https://51nbimg.u51.com/5c8f02b484074eab8968768f4c0a65b0.jpg',
     ],
   },
   {
     id: 18,
     type: 6,
     bannerList: [
-      'https://51nbimg.u51.com/cdfae73ee84b443fb89d12e0ff74c704.jpg',
-      'https://51nbimg.u51.com/10b8cc73f376481d911e968945636738.jpg',
+      'https://51nbimg.u51.com/57cc992984dc4fb28fdb6a2517bce899.jpg',
+      'https://51nbimg.u51.com/86eebdf02bac433fb834a05f63060631.jpg',
     ],
     contentImageList: [
-      'https://51nbimg.u51.com/1feb246cae3c4408b94163eb9eff76fe.jpg',
+      'https://51nbimg.u51.com/8425a7ae3d6d42f590ac3c0e69f7ed3d.jpg',
     ],
   },
   {
     id: 19,
     type: 6,
     bannerList: [
-      'https://51nbimg.u51.com/ae143d5b99c6495ca36fc52ec2f6e0f5.jpg',
-      'https://51nbimg.u51.com/cabc1d23da184d98afb6b788b6819ad7.jpg',
+      'https://51nbimg.u51.com/c5c13d940e4e47089a0a2b6b8e492829.jpg',
+      'https://51nbimg.u51.com/ee529214be3a47b98b5705d24886fb6d.jpg',
     ],
     contentImageList: [
-      'https://51nbimg.u51.com/5677221b3cad4e6e9dc16e374c0f25f9.jpg',
+      'https://51nbimg.u51.com/a2f8595a58734ca0b923b0c977691b4e.jpg',
     ],
   },
   {
     id: 20,
     type: 6,
     bannerList: [
-      'https://51nbimg.u51.com/3b029ee02c2941ea94dafb7cd7d28f75.jpg',
-      'https://51nbimg.u51.com/6065c6d9d51a46fba8fed1acc6815b09.jpg',
+      'https://51nbimg.u51.com/5aa97fd073cd4091b4cc13ae1d0b8a01.jpg',
     ],
     contentImageList: [
-      'https://51nbimg.u51.com/66d3295c0cf54abb89cbd165f0e6b527.jpg',
+      'https://51nbimg.u51.com/3eb67139f14548c7b2facbb41a4f804e.jpg',
     ],
   },
   {
     id: 21,
     type: 6,
     bannerList: [
-      'https://51nbimg.u51.com/45824de0bafc4d5eb37d5a01156df2a4.jpg',
-      'https://51nbimg.u51.com/5ad1d3d2530c41f0aa7ca57bdc71ff71.jpg',
+      'https://51nbimg.u51.com/8866d42f3a2148a29b14a832cb1aeede.jpg',
+      'https://51nbimg.u51.com/f6258bda01f44e0e8c8455a4073ff5c7.jpg',
     ],
     contentImageList: [
-      'https://51nbimg.u51.com/767028a43a504712be23c7511d40ce3f.jpg',
+      'https://51nbimg.u51.com/149013d139c1447c97c0cd3f3f6410bf.jpg',
+    ],
+  },
+  {
+    id: 22,
+    type: 6,
+    bannerList: [
+      'https://51nbimg.u51.com/1df2471bf9a64840886dc0055edb296e.jpg',
+      'https://51nbimg.u51.com/881ace4dbf1048d09faa6e368734ac8b.jpg',
+    ],
+    contentImageList: [
+      'https://51nbimg.u51.com/1d9d65f10177470a9dba5780305cb661.jpg',
+    ],
+  },
+  {
+    id: 23,
+    type: 6,
+    bannerList: [
+      'https://51nbimg.u51.com/817506773a7c44b987155ef842eb8b05.jpg',
+      'https://51nbimg.u51.com/d335c5799fc441df8c2a68bd5f18c006.jpg',
+    ],
+    contentImageList: [
+      'https://51nbimg.u51.com/5e8b10af9b444776976ea52dbfedc52f.jpg',
     ],
   },
 ];

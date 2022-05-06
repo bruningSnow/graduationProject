@@ -21,6 +21,11 @@ const Index: React.FC<{}> = () => {
     if (type) {
       setSwiperCurrent(parseInt(type) - 1);
     }
+
+    Taro.showShareMenu({
+      withShareTicket: true,
+      showShareItems: ['qq', 'qzone', 'wechatFriends', 'wechatMoment'],
+    });
   });
 
   const swiperCurrent_0_data = useMemo(() => {
@@ -72,18 +77,13 @@ const Index: React.FC<{}> = () => {
         >
           <AtTabsPane tabDirection="vertical" current={swiperCurrent} index={0}>
             <View className={styles.tabsPane}>
-              {swiperCurrent_0_data.map((item, itemIndex: number) => {
-                if (itemIndex === swiperCurrent_0_data.length - 1) {
-                  return (
-                    <ClassfiyTabItem
-                      style={{ marginBottom: 0 }}
-                      {...item}
-                      onClick={toProductDetail}
-                    />
-                  );
-                }
-                return <ClassfiyTabItem {...item} onClick={toProductDetail} />;
-              })}
+              {swiperCurrent_0_data.map((item, itemIndex: number) => (
+                <ClassfiyTabItem
+                  key={itemIndex}
+                  {...item}
+                  onClick={toProductDetail}
+                />
+              ))}
             </View>
           </AtTabsPane>
           <AtTabsPane tabDirection="vertical" current={swiperCurrent} index={1}>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Taro from '@tarojs/taro';
+import Taro, { useDidShow } from '@tarojs/taro';
 import { View } from '@tarojs/components';
 import { AtInput } from 'taro-ui';
 import { PageContainer, ClassfiyTabItem } from '@/components/index';
@@ -18,6 +18,13 @@ const Index: React.FC<{}> = () => {
 
     setInnerListItems(newInnerListItems);
   }, [inputValue]);
+
+  useDidShow(() => {
+    Taro.showShareMenu({
+      withShareTicket: true,
+      showShareItems: ['qq', 'qzone', 'wechatFriends', 'wechatMoment'],
+    });
+  });
 
   return (
     <PageContainer

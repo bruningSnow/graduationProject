@@ -53,6 +53,11 @@ const ProductDetail: React.FC<any> = () => {
   useDidShow(() => {
     init();
     setSwiperCurrent(0);
+
+    Taro.showShareMenu({
+      withShareTicket: true,
+      showShareItems: ['qq', 'qzone', 'wechatFriends', 'wechatMoment'],
+    });
   });
 
   return (
