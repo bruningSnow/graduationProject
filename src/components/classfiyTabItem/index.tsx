@@ -125,6 +125,46 @@ const ClassfiyTabItem: React.FC<ClassfiyTabItemProps> = (props) => {
             产品净含量：{productAttri.chanpinjinghanlian}
           </View>
         )}
+        {productAttri?.yanse && (
+          <View className={styles.ClassfiyTabItem_right_des} style={itemStyle}>
+            颜色：{productAttri.yanse}
+          </View>
+        )}
+        {productAttri?.xiemian && (
+          <View className={styles.ClassfiyTabItem_right_des} style={itemStyle}>
+            鞋面：{productAttri.xiemian}
+          </View>
+        )}
+        {productAttri?.banmian && (
+          <View className={styles.ClassfiyTabItem_right_des} style={itemStyle}>
+            板面：{productAttri.banmian}
+          </View>
+        )}
+        {productAttri?.chengzhong && (
+          <View className={styles.ClassfiyTabItem_right_des} style={itemStyle}>
+            承重：{productAttri.chengzhong}
+          </View>
+        )}
+        {productAttri?.shuliang && (
+          <View className={styles.ClassfiyTabItem_right_des} style={itemStyle}>
+            数量：{productAttri.shuliang}
+          </View>
+        )}
+        {productAttri?.baozhuang && (
+          <View className={styles.ClassfiyTabItem_right_des} style={itemStyle}>
+            包装：{productAttri.baozhuang}
+          </View>
+        )}
+        {productAttri?.gongxiao && (
+          <View className={styles.ClassfiyTabItem_right_des} style={itemStyle}>
+            功效：{productAttri.gongxiao}
+          </View>
+        )}
+        {productAttri?.shihefuzhi && (
+          <View className={styles.ClassfiyTabItem_right_des} style={itemStyle}>
+            适合肤质：{productAttri.shihefuzhi}
+          </View>
+        )}
       </View>
     </View>
   );

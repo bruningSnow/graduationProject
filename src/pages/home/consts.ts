@@ -17,6 +17,14 @@ type TProductAttri = {
   guige?: string; // 规格
   xiliesehao?: string; // 系列色号
   chanpinjinghanlian?: string; // 产品净含量
+  yanse?: string; // 颜色
+  xiemian?: string; // 鞋面
+  banmian?: string; // 板面
+  chengzhong?: string; // 承重
+  shuliang?: string; // 数量
+  baozhuang?: string; // 包装
+  gongxiao?: string; // 功效
+  shihefuzhi?: string; // 适合肤质
 };
 export interface IListItem {
   id: number;
@@ -170,6 +178,7 @@ export const listItems: IListItem[] = [
     type: 3,
     productAttri: {
       classfiy: '国潮彩妆',
+      gongxiao: '隐形毛孔、定妆',
     },
   },
   {
@@ -179,6 +188,8 @@ export const listItems: IListItem[] = [
     type: 3,
     productAttri: {
       classfiy: '国潮彩妆',
+      caizhi: 'PU皮面',
+      chicun: '19*13*10厘米',
     },
   },
   {
@@ -188,6 +199,8 @@ export const listItems: IListItem[] = [
     type: 3,
     productAttri: {
       classfiy: '国潮彩妆',
+      gongxiao: '控油防嗮、轻薄透气',
+      shihefuzhi: '任何肤质',
     },
   },
   {
@@ -208,6 +221,8 @@ export const listItems: IListItem[] = [
     type: 4,
     productAttri: {
       classfiy: '潮玩穿搭',
+      caizhi: '纯棉',
+      yanse: '多色可选',
     },
   },
   {
@@ -217,6 +232,8 @@ export const listItems: IListItem[] = [
     type: 4,
     productAttri: {
       classfiy: '潮玩穿搭',
+      mianliao: '80%棉、20%涤纶',
+      gongyi: '数码印花',
     },
   },
   {
@@ -226,6 +243,8 @@ export const listItems: IListItem[] = [
     type: 4,
     productAttri: {
       classfiy: '潮玩穿搭',
+      yanse: '黑色标准版、白色标准版',
+      xiemian: '粒面皮',
     },
   },
   {
@@ -235,6 +254,8 @@ export const listItems: IListItem[] = [
     type: 5,
     productAttri: {
       classfiy: '潮纹织物',
+      caizhi: '塑钢',
+      yanse: '多色可选',
     },
   },
   {
@@ -244,6 +265,8 @@ export const listItems: IListItem[] = [
     type: 5,
     productAttri: {
       classfiy: '潮纹织物',
+      mianliao: '真丝',
+      yanse: '黑、白、粉、黄',
     },
   },
   {
@@ -253,6 +276,8 @@ export const listItems: IListItem[] = [
     type: 5,
     productAttri: {
       classfiy: '潮纹织物',
+      banxing: '标准',
+      yanse: '粉色 绿色 橙色 蓝色',
     },
   },
   {
@@ -262,6 +287,8 @@ export const listItems: IListItem[] = [
     type: 6,
     productAttri: {
       classfiy: '潮玩好物',
+      banmian: '七层进口加拿大枫木',
+      chengzhong: '静态400斤',
     },
   },
   {
@@ -271,6 +298,8 @@ export const listItems: IListItem[] = [
     type: 6,
     productAttri: {
       classfiy: '潮玩好物',
+      mianliao: '斜纹科技面料，棉麻混纺',
+      gongyi: '热转印工艺',
     },
   },
   {
@@ -280,6 +309,9 @@ export const listItems: IListItem[] = [
     type: 6,
     productAttri: {
       classfiy: '潮玩好物',
+      chicun: '圆形/103*103*8mm',
+      caizhi: '吸水陶瓷 软木',
+      yanse: '可定制自己喜欢的图案',
     },
   },
   {
@@ -289,6 +321,8 @@ export const listItems: IListItem[] = [
     type: 6,
     productAttri: {
       classfiy: '潮玩好物',
+      caizhi: '陶瓷',
+      rongliao: '400ML',
     },
   },
   {
@@ -298,6 +332,8 @@ export const listItems: IListItem[] = [
     type: 6,
     productAttri: {
       classfiy: '潮玩好物',
+      caizhi: '帆布，内衬防水尼龙布',
+      gongyi: '热转印工艺',
     },
   },
   {
@@ -307,6 +343,8 @@ export const listItems: IListItem[] = [
     type: 6,
     productAttri: {
       classfiy: '潮玩好物',
+      caizhi: '和纸',
+      shuliang: '一套四种款式',
     },
   },
   {
@@ -316,6 +354,8 @@ export const listItems: IListItem[] = [
     type: 6,
     productAttri: {
       classfiy: '潮玩好物',
+      caizhi: 'PC（线型碳酸聚酯材料）',
+      shuliang: '一套三种款式',
     },
   },
   {
@@ -325,6 +365,8 @@ export const listItems: IListItem[] = [
     type: 6,
     productAttri: {
       classfiy: '潮玩好物',
+      baozhuang: '独立包装',
+      gongyi: '热转印工艺',
     },
   },
   {
@@ -334,6 +376,8 @@ export const listItems: IListItem[] = [
     type: 6,
     productAttri: {
       classfiy: '潮玩好物',
+      gongneng: '遮光助眠，缓解眼疲劳',
+      caizhi: '外部100%桑蚕丝，内衬丝绵300ml',
     },
   },
 ];
