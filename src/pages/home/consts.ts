@@ -10,6 +10,13 @@ type TProductAttri = {
   xinzhuang?: string; // 形状
   chicun?: string; // 尺寸
   rongliao?: string; // 容量
+  dianchironglian?: string; // 电池容量
+  qudongqi?: string; // 驱动器
+  jiekou?: string; // 接口
+  gongyi?: string; // 工艺
+  guige?: string; // 规格
+  xiliesehao?: string; // 系列色号
+  chanpinjinghanlian?: string; // 产品净含量
 };
 export interface IListItem {
   id: number;
@@ -28,10 +35,10 @@ export interface IProductType {
 export const swiperImageList: string[] = [
   'https://51nbimg.u51.com/1d195c2332e644c88ad5da74ad9fb125.jpg',
   '',
-  'https://51nbimg.u51.com/32c58f4936fc41d7a7685fc46e4a4a0d.jpg',
+  'https://51nbimg.u51.com/18d7f6441208412384f8de73f760bd8e.jpg',
   'https://51nbimg.u51.com/59150c7a3a2c419990d78d970259ecb3.jpg',
   'https://51nbimg.u51.com/aa8b210d8d7c449995c1a146830a82d9.jpg',
-  'https://51nbimg.u51.com/15961269999645608e7b787ea862e3b3.jpg',
+  'https://51nbimg.u51.com/e059f485a2154b2b8792aec381de6426.jpg',
 ];
 
 export const productTypeList: IProductType[] = [
@@ -77,18 +84,19 @@ export const listItems: IListItem[] = [
       classfiy: 'e潮品',
       caizhi: '液态硅胶',
       kuanshi: '保护壳',
-      xinghao: 'HUAWEI/华为',
+      xinghao: 'IPone13',
     },
   },
   {
     id: 2,
-    imgSrc: 'https://51nbimg.u51.com/ea92a54dc0054744aba49fa489e20828.jpg',
+    imgSrc: 'https://51nbimg.u51.com/08afda745401457ba96064ac90a72ccf.jpg',
     sourceName: '鼠标垫',
     type: 1,
     productAttri: {
       classfiy: 'e潮品',
-      caizhi: '胶垫',
+      caizhi: '正面布料/底面橡胶',
       xinzhuang: '圆形',
+      chicun: '30*30/40*40/50*50 (cm)',
     },
   },
   {
@@ -98,7 +106,7 @@ export const listItems: IListItem[] = [
     type: 1,
     productAttri: {
       classfiy: 'e潮品',
-      xinghao: 'sense 6',
+      chicun: '官方标配',
       caizhi: '塑料',
     },
   },
@@ -109,8 +117,8 @@ export const listItems: IListItem[] = [
     type: 1,
     productAttri: {
       classfiy: 'e潮品',
-      caizhi: '硅胶',
-      xinghao: 'airpods1/2/3/pro代',
+      dianchironglian: '400mAh',
+      qudongqi: '40mm',
     },
   },
   {
@@ -120,8 +128,8 @@ export const listItems: IListItem[] = [
     type: 1,
     productAttri: {
       classfiy: 'e潮品',
-      xinghao: 'F308(64G)',
-      rongliao: '64GB',
+      jiekou: 'USB2.0',
+      rongliao: '32GB/64GB',
     },
   },
   {
@@ -140,6 +148,8 @@ export const listItems: IListItem[] = [
     type: 2,
     productAttri: {
       classfiy: '百搭潮包',
+      caizhi: '涤纶',
+      gongyi: '丝网印刷',
     },
   },
   {
@@ -149,6 +159,8 @@ export const listItems: IListItem[] = [
     type: 2,
     productAttri: {
       classfiy: '百搭潮包',
+      caizhi: 'PU软皮磨砂料',
+      guige: '13.5*9.5cm',
     },
   },
   {
@@ -185,6 +197,8 @@ export const listItems: IListItem[] = [
     type: 3,
     productAttri: {
       classfiy: '国潮彩妆',
+      xiliesehao: '四色藻井',
+      chanpinjinghanlian: '3.2G/支',
     },
   },
   {
@@ -297,7 +311,7 @@ export const listItems: IListItem[] = [
   },
   {
     id: 21,
-    imgSrc: 'https://51nbimg.u51.com/5958adecc4b741aeb32c6ff8fabe8a3e.jpg',
+    imgSrc: 'https://51nbimg.u51.com/a2be5439bb8649fdb5e5ca77b3e69928.jpg',
     sourceName: '行李箱',
     type: 6,
     productAttri: {

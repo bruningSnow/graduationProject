@@ -90,6 +90,41 @@ const ClassfiyTabItem: React.FC<ClassfiyTabItemProps> = (props) => {
             容量：{productAttri.rongliao}
           </View>
         )}
+        {productAttri?.dianchironglian && (
+          <View className={styles.ClassfiyTabItem_right_des} style={itemStyle}>
+            电池容量：{productAttri.dianchironglian}
+          </View>
+        )}
+        {productAttri?.qudongqi && (
+          <View className={styles.ClassfiyTabItem_right_des} style={itemStyle}>
+            驱动器：{productAttri.qudongqi}
+          </View>
+        )}
+        {productAttri?.jiekou && (
+          <View className={styles.ClassfiyTabItem_right_des} style={itemStyle}>
+            接口：{productAttri.jiekou}
+          </View>
+        )}
+        {productAttri?.gongyi && (
+          <View className={styles.ClassfiyTabItem_right_des} style={itemStyle}>
+            工艺：{productAttri.gongyi}
+          </View>
+        )}
+        {productAttri?.guige && (
+          <View className={styles.ClassfiyTabItem_right_des} style={itemStyle}>
+            规格：{productAttri.guige}
+          </View>
+        )}
+        {productAttri?.xiliesehao && (
+          <View className={styles.ClassfiyTabItem_right_des} style={itemStyle}>
+            系列色号：{productAttri.xiliesehao}
+          </View>
+        )}
+        {productAttri?.chanpinjinghanlian && (
+          <View className={styles.ClassfiyTabItem_right_des} style={itemStyle}>
+            产品净含量：{productAttri.chanpinjinghanlian}
+          </View>
+        )}
       </View>
     </View>
   );
