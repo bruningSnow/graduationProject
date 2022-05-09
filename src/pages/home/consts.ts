@@ -42,7 +42,7 @@ export interface IProductType {
 
 export const swiperImageList: string[] = [
   'https://51nbimg.u51.com/1d195c2332e644c88ad5da74ad9fb125.jpg',
-  '',
+  'https://51nbimg.u51.com/b6ad1f54ca554e78b1e4690a845d5df6.jpeg',
   'https://51nbimg.u51.com/18d7f6441208412384f8de73f760bd8e.jpg',
   'https://51nbimg.u51.com/59150c7a3a2c419990d78d970259ecb3.jpg',
   'https://51nbimg.u51.com/aa8b210d8d7c449995c1a146830a82d9.jpg',
@@ -142,11 +142,13 @@ export const listItems: IListItem[] = [
   },
   {
     id: 5,
-    imgSrc: 'https://51nbimg.u51.com/e538fd6dd8cf4015824e20f39d27226c.jpg',
-    sourceName: '百搭潮包包',
+    imgSrc: 'https://51nbimg.u51.com/0fed991bd1d043ba8378b244162e5fe7.jpeg',
+    sourceName: '手工包',
     type: 2,
     productAttri: {
-      classfiy: '百搭潮包',
+      classfiy: '手工包',
+      mianliao: '78%棉18.0%棉纶3.4%氨纶',
+      banxing: '合体',
     },
   },
   {

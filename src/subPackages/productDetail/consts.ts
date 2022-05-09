@@ -74,8 +74,13 @@ export const productList: IProduct[] = [
   {
     id: 5,
     type: 2,
-    bannerList: [],
-    contentImageList: [],
+    bannerList: [
+      'https://51nbimg.u51.com/b6ad1f54ca554e78b1e4690a845d5df6.jpeg',
+      'https://51nbimg.u51.com/3915d2b9cedd43d2ada245e96a9b6a1a.jpeg',
+    ],
+    contentImageList: [
+      'https://51nbimg.u51.com/d9e72eb7b4114911a4c97f23b5eee758.jpeg',
+    ],
   },
   {
     id: 6,
@@ -117,7 +122,7 @@ export const productList: IProduct[] = [
       'https://51nbimg.u51.com/1fa9873c4a734cfcbf0d92394693ab48.jpg',
     ],
     contentImageList: [
-      'https://51nbimg.u51.com/d861d53af12c4b1c8f444e9101e4a184.jpg',
+      'https://51nbimg.u51.com/a3fb77c784744b0b9d9a717445bacfbc.jpeg',
     ],
   },
   {
